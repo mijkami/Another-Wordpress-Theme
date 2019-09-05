@@ -60,10 +60,22 @@ register_nav_menus(array(
 ));
 
 register_sidebar(array(
-    'id' => 'blog-sidebar',
-    'name' => 'Blog',
-    'before_widget'  => '<div class="site__sidebar__widget %2$s">',
+    'id' => 'new_sidebar',
+    'name' => __('New Sidebar'),
+    'description' => __('An other sidebar.'),
+    'before_widget'  => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',
-    'before_title' => '<p class="site__sidebar__widget__title">',
-    'after_title' => '</p>',
+    'before_title' => '<h3 class="site__sidebar__widget__title">',
+    'after_title' => '</h3>',
 ));
+
+if (function_exists('register_sidebar'))
+    register_sidebar(
+        array(
+            'name' => 'Sidebar Widget Area',
+            'before_widget' => '<div class = "sideWidgetArea">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3>',
+            'after_title' => '</h3>',
+        )
+    );

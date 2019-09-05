@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="row">
-    <div class="col-sm-8 blog-main">
+    <div class="col-sm-7 blog-main">
 
     <!-- WP main Loop -->
         <?php
