@@ -9,7 +9,8 @@
     <meta name="author" content="">
 
     <title>Another Wordpress Theme</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- fichier CSS appelé via le header, désactivé pour l'appeler dans functions.php -->
     <!-- <link href="<?php echo get_bloginfo('template_directory'); ?>/css/main.css" rel="stylesheet"> -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
